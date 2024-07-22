@@ -6,7 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <link href="css/splide.min.css" rel="stylesheet">
+    <link href="css/fancybox.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/image.css">
+    <link rel="stylesheet" href="css/font.css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/splide.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
 </head>
 
 <body>
@@ -17,8 +28,9 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse row" id="navbar">
-                    <ul class="navbar-nav col-lg-4 offset-lg-8">
+                <div class="navbar-collapse collapse row justify-content-lg-end justify-content-start w-100"
+                    id="navbar">
+                    <ul class="navbar-nav col-auto">
                         <li class="nav-item">
                             <a href="#" class="nav-link link-danger">Home</a>
                         </li>
@@ -31,8 +43,16 @@
                         <li class="nav-item">
                             <a href="#" class="nav-link">Chefs</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">chefs</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Features
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">Contact Us</a>
@@ -42,7 +62,48 @@
             </div>
         </div>
     </div>
-    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <div class="">
+        <img src="img/reservation-bg.jpg" alt="">
+    </div>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            new Splide(".splide", {
+                arrows: false,
+                perMove: 1,
+                pagination: !1,
+                perPage: 5,
+                gap: "1.5rem",
+                breakpoints: {
+                    1200: { perPage: 5 },
+                    920: { perPage: 4 },
+                    768: { perPage: 2 }
+                }
+            }).mount()
+            new Splide(".splide-2", {
+                arrows: false,
+                perMove: 1,
+                pagination: !1,
+                perPage: 3,
+                gap: "1.5rem",
+                breakpoints: {
+                    920: { perPage: 2 },
+                    520: { perPage: 1 }
+                }
+            }).mount()
+        });
+    </script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+    </script>
 </body>
 
 </html>

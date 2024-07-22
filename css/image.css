@@ -1,8 +1,13 @@
 .bg-image {
-    background-image: url("../img/slide-01.jpg");
-    background-color: #000000;
+    background-image: url("../img/top-left-bg.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-image2 {
+    background-image: url("../img/reservation-bg.jpg");
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }

@@ -1,3 +1,15 @@
 vh-50 {
     height: 50vh;
 }
+
+.custom-height{
+    height: 2rem;
+    transition: 1s ;
+}
+
+.splide-hover:hover .custom-height{
+    height: 50%;
+}
+.custom-color{
+    background: rgba(150, 150, 150, 0.25);
+}

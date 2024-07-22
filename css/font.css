@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'DancingScript';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../static/DancingScript-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'DancingScript';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../static/DancingScript-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'DancingScriptato';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../static/DancingScript-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 500;
+    src: url('../font/Lato-MediumItalic.ttf');
+}
+
+.dancing-script {
+    font-family: 'DancingScript', Arial, Helvetica, sans-serif;
+}
