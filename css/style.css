@@ -1,5 +1,17 @@
-vh-50 {
+.vh-50 {
     height: 50vh;
+}
+
+@media (orientation: landscape){
+    .vh-50{
+        height: 100vh;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1200px){
+    .vh-50{
+        height: 50vh;
+    }
 }
 
 .custom-height{
